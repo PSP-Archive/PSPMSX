@@ -1,0 +1,191 @@
+1.4.1
+
+- Finally fix issue with "Home -> Exit" !
+- Text editor to write your own comments on games 
+- Display first comment line while browsing game files
+- Digital pad is now usable in file requester 
+  even when danzeff keyboard is displayed
+- Fix inconsistency between zip rom file names and save game name.
+- Improve cheat menu & memory monitoring engine
+- Text editor to modify the global cheat.txt file
+- Tested on new FW 5x-M33
+- Bug fix in unzip function (if you tried to unzip 
+  more than 10 files, it wasn't able to open any 
+  other files, and you had to restart the emulator)
+- Add option to disable auto fire in settings menu
+
+
+1.4.0
+
+- Cheat support !
+- Memory monitoring engine to find your own cheat code !
+- Zip rom files are now decompressed in memory (much faster !)
+- New render modes (x1.25, x1.5 and x1.75)
+- Add vertical shift & vsync feature 
+- Improve file requester with virtual keyboard to choose 
+  sequentially rom files beginning with a given letter
+- Add documentation for settings in help menu
+- The virtual keyboard is now usable in the file requester menu to
+  choose the first letter of the game you search !
+- In the emulator menu you can go directly to keyboard and settings
+  menu using the L-Trigger key.
+- Source code can now be compiled to build a linux version
+
+1.3.1
+
+- The virtual keyboard is now usable in the file requester menu to
+  choose the first letter of the game you search !
+
+1.3.0
+
+- Add gzipped disk file support, reduce disk file size from 700k to 50k !
+  (you may gzip original dsk file using www.7-zip.org)
+- Add MSX eboot's music (thanks to Konami :))
+- A thumbnail image is now displayed in the file requester 
+  while selecting any file with the same name of a previously 
+  saved game (rom, disk, keyboard, settings).
+  It might be very helpful to recognize that game later if you 
+  have thousand different games on your disk and rom folders !
+- In the emulator menu you can go directly to keyboard and settings
+  menu using the L-Trigger key.
+- Fix IR keyboard issue with fw >= 3.80 for FAT PSP
+- Fix random black screen issue
+
+1.2.4
+
+- Add missing keys such as HOME, GRAPH, STOP
+  (Thanks to symBioT for the bug report)
+- Auto joystick fire mode, press RTrigger+X to switch it on/off
+  (useful for games such as 1942)
+- Add several new hotkeys :
+  . settings such as fps, render mode, auto fire speed
+    can now be directly modified inside the emulator
+    (no need to enter in the settings menu)
+  . quick save / quick load current state
+    (no need to enter in the main menu)
+- Bug fix in the low battery watchdog
+- Analog pad can be used in the rom file requester
+- RTrigger/LTrigger keys can be used in the keyboard
+  settings menu to navigate between Normal, LTrigger 
+  and  RTrigger compose mapping.
+
+1.2.3
+
+- Major speed improvements while using GU render modes
+- Small changes in settings menu and default settings options
+
+1.2.2
+
+- Add option to increase sound volume
+
+1.2.1
+
+- New render fast mode (original msx size but very fast)
+- Option to prevent the blue led to be displayed when 
+  L or R are pressed
+- Remove .png file when removing state file
+- Bug fix: random pixels colors on screen borders
+- IR keyboard works now also with in the keyboard
+  settings/mapping menu
+
+1.2.0
+
+- Huge speed improvements, it runs now faster than 60 fps
+  using only 222Mhz PSP clock frequency
+- IR keyboard support !
+- New graphics and eboot icons 
+- Display and save thumbnail images for each save state
+- Add a new render mode (fit height)
+- New speed limiter function
+- Add option to display fps rate
+- Now compatible with custom firmwares 3.x and PSP-slim
+- Add a simple intro splash screen  
+- Support iso8859-1 fonts in print text functions 
+  (might be useful to translate menus in german, french ...)
+- Bug fix and code cleaning
+
+
+1.1.0
+
+- No more need to restart PSPMSX to change the MSX model
+- Add option to toggle between PAL/NTSC
+- Add option to change the RAM size
+- Bug fix in the max render mode
+
+1.0.9
+
+- Bug fix to play Snatcher
+
+1.0.8
+
+- Add option to enable the sound and musix chips
+  (FM-AM and Music modules) required by several games.
+  It's slow down the emulator, so use it with care.
+- Add a new render mode (max) to fit the entire MSX screen
+- Add missing MSX keys (thanks to Creepy)
+- Fix 3.10-OE black screen bug in smooth mode 
+  (thanks to Creepy for his feedback)
+
+1.0.7
+
+- A new graphical engine with new smoother render modes !
+  It uses now the PSP GU for rendering, it does not run faster, 
+  but it's a lot smoother !
+  Old "soft" render modes are still available, because there are
+  a bit faster.
+- Save state dates are displayed in the emulator window
+  (it's now easier to identify and to load the right save state slot)
+- Add help menu
+- Bug fix (load default keyboard mapping on startup)
+- Bug fix in Rom file requester 
+- Bug fix in keyboard handler
+
+1.0.6
+
+- Icons and background images designed by Malkster
+- Emulator menus reorganization (new menu for settings)
+- Multiple keyboard mappings feature developped by Pou-chan :
+  You can now toggle between 3 different keyboard mapping using 
+  LTrigger and RTrigger keys
+- Add keyboard change skin option :
+  you can add your own virtual keyboard images in the graphics directory.
+- New speed limiter (more accurate)
+- New feature to save and load a distinct setting file for each games
+- Delete files option (in the file selector)
+- Screenshots are now saved in PNG format instead of BMP 
+- The percent of battery left is now displayed in the emulator window
+- Add a watchdog to automatically return to the emulator menu
+  when  the battery is very low (< 5%)
+- Bug fix and code cleaning
+
+
+1.0.5
+
+- Option to eject the rom
+- Changing disk doesn't reboot anymore the MSX 
+  (usefull to play games with multiple disks)
+- Sound improvements
+
+1.0.4
+
+- Disk can now be loaded !
+- Joystick support
+
+1.0.3
+
+- All roms can now be loaded directly !
+- MSX version can be changed inside the emulator
+  (no need to rename the rom as carta.rom etc ...)
+- Fix a bug in sound startup
+
+1.0.2
+
+- Add Load/Save/Del states menu !
+- The default MSX model is now MSX2+
+  (this can be changed by editing the configuration
+   file pspmsx.cfg).
+- Add exit menu
+
+1.0.1
+
+- Intial release
